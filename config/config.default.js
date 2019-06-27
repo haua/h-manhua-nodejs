@@ -28,7 +28,10 @@ const userConfig = {
     server: 'wss://agentserver.node.aliyun.com:8080',
     appid: '80421',
     secret: '56302f8ce8a6cbe9caec7aaef15e6bc6dff246e7',
-    logdir: '/home/haua/logs/alinode/'
+    logdir: '/home/haua/logs/alinode/',
+    packages: [
+      '/home/haua/nodejs_projects/h-manhua-nodejs/package.json'
+    ]
   }
 }
 
