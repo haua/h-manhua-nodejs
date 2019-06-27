@@ -22,6 +22,13 @@ const userConfig = {
 
   logger: { // logger为false就不会记录任何日志了
     logTo: 'console' // 日志输出到哪，默认是控制台
+  },
+
+  alinode: {
+    server: 'wss://agentserver.node.aliyun.com:8080',
+    appid: '80421',
+    secret: '56302f8ce8a6cbe9caec7aaef15e6bc6dff246e7',
+    logdir: '/tmp/'
   }
 }
 

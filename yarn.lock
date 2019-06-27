@@ -433,6 +433,17 @@ agentkeepalive@^4.0.2:
     depd "^1.1.2"
     humanize-ms "^1.2.1"
 
+agentx@^1.8.4:
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/agentx/-/agentx-1.10.3.tgz#c4211f62c6a5b0c6c9ac0a68d3195ae0178bb8fb"
+  integrity sha512-HsHDZPOQVCIbRnA6nDjmQMWG65ULAS2GOhb2cvpFRwuNsWmfpb8Qc827z72taZ6RB+z75sqpI3CqqjG7Ynkb9g==
+  dependencies:
+    debug "^3.1.0"
+    nounou "^1.2.1"
+    split2 "^2.2.0"
+    through2 "^2.0.3"
+    ws "^1.1.5"
+
 ajv-keywords@^3.0.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.4.0.tgz#4b831e7b531415a7cc518cd404e73f6193c6349d"
@@ -1937,6 +1948,15 @@ commander@^2.11.0, commander@^2.15.1, commander@^2.9.0, commander@~2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
 
+commandx@^1.3.3:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/commandx/-/commandx-1.5.4.tgz#2e09187a93df845433e9ae791e9922a7b16d8f10"
+  integrity sha512-DTb4nXLwTTSa500Ga3zn2bdVNsGV9L2bcsnZPs6Sx/M5OC57EoEgHR7J6J3VZtBnMJ6qJBOd7oGr0CpCe0pA7w==
+  dependencies:
+    formstream "^1.1.0"
+    tunnel-agent "^0.6.0"
+    urllib "^2.22.0"
+
 common-bin@^2.8.0, common-bin@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/common-bin/-/common-bin-2.8.1.tgz#445b9bcb0df97de2c90cc09d5b49b6f8c46d820d"
@@ -2415,6 +2435,18 @@ ee-first@1.1.1, ee-first@^1.1.1, ee-first@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+egg-alinode@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/egg-alinode/-/egg-alinode-2.0.1.tgz#a0cfa3a916e68aa5e3ebaba1aaab70375843268f"
+  integrity sha512-ZzZdFITE8qlZ+W4yFzKYCCieKPV8CqNRIfDCxtq+0OEQZiYVv4FBUTTsr2AII5Dx5e1NbmS22HG5jEx97NEZQw==
+  dependencies:
+    agentx "^1.8.4"
+    commandx "^1.3.3"
+    mkdirp "^0.5.1"
+    moment "^2.17.1"
+    mz "^2.6.0"
+    node-homedir "^1.1.0"
 
 egg-bin@^4.11.0:
   version "4.13.0"
@@ -5020,7 +5052,7 @@ moment-timezone@^0.5.21, moment-timezone@^0.5.25:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.22.2, moment@^2.23.0, moment@^2.24.0:
+"moment@>= 2.9.0", moment@^2.17.1, moment@^2.22.2, moment@^2.23.0, moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -5097,7 +5129,7 @@ mz-modules@^2.1.0:
     pump "^3.0.0"
     rimraf "^2.6.1"
 
-mz@^2.7.0:
+mz@^2.6.0, mz@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
   integrity sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==
@@ -5199,7 +5231,7 @@ node-environment-flags@1.0.5:
     object.getownpropertydescriptors "^2.0.3"
     semver "^5.7.0"
 
-node-homedir@^1.1.1:
+node-homedir@^1.1.0, node-homedir@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/node-homedir/-/node-homedir-1.1.1.tgz#736db0b60e3bba8aba68df9927de40a7aabe1075"
   integrity sha512-Xsmf94D/DdeDISAECUaxXVxhh+kHdbOQE4CnP4igo3HXL3BSmmUpD5M7orH434EZZwBTFF2xe5SgsQr/wOBuNw==
@@ -5249,6 +5281,11 @@ normalize-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+nounou@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/nounou/-/nounou-1.2.1.tgz#a9047efa4405e26ec7e768875bd2580fc4a5f08f"
+  integrity sha1-qQR++kQF4m7H52iHW9JYD8Sl8I8=
 
 npm-bundled@^1.0.1:
   version "1.0.6"
@@ -5427,6 +5464,11 @@ optionator@^0.8.1, optionator@^0.8.2:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
     wordwrap "~1.0.0"
+
+options@>=0.0.5:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/options/-/options-0.0.6.tgz#ec22d312806bb53e731773e7cdaefcf1c643128f"
+  integrity sha1-7CLTEoBrtT5zF3Pnza788cZDEo8=
 
 os-homedir@^1.0.0, os-homedir@^1.0.1:
   version "1.0.2"
@@ -6695,7 +6737,7 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-split2@^2.1.0:
+split2@^2.1.0, split2@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/split2/-/split2-2.2.0.tgz#186b2575bcf83e85b7d18465756238ee4ee42493"
   integrity sha512-RAb22TG39LhI31MbreBgIuKiIKhVsawfTgEGqKHTK87aG+ul/PB8Sqoi3I7kVdRWiCfrKxK3uo4/YUkpNvhPbw==
@@ -7234,6 +7276,11 @@ uid-safe@2.1.5:
   dependencies:
     random-bytes "~1.0.0"
 
+ultron@1.0.x:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
+  integrity sha1-rOEWq1V80Zc4ak6I9GhTeMiy5Po=
+
 unescape@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/unescape/-/unescape-1.0.1.tgz#956e430f61cad8a4d57d82c518f5e6cc5d0dda96"
@@ -7312,7 +7359,7 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
-urllib@*, urllib@^2.24.0, urllib@^2.25.1, urllib@^2.33.0, urllib@^2.33.3:
+urllib@*, urllib@^2.22.0, urllib@^2.24.0, urllib@^2.25.1, urllib@^2.33.0, urllib@^2.33.3:
   version "2.34.0"
   resolved "https://registry.yarnpkg.com/urllib/-/urllib-2.34.0.tgz#91bc630cfde9dd990bfb42ae9b1a82c7f6adfe10"
   integrity sha512-DzaVGXXJiMTMPyXjaZvkYA1iw5i1lSzotDzqd1nLbcWLcPKrQUyuQ/aazOAditoOKnbA/iSljyHiENkbu9eUSA==
@@ -7474,6 +7521,14 @@ write@^0.2.1:
   integrity sha1-X8A4KOJkzqP+kUVUdvejxWbLB1c=
   dependencies:
     mkdirp "^0.5.1"
+
+ws@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.5.tgz#cbd9e6e75e09fc5d2c90015f21f0c40875e0dd51"
+  integrity sha512-o3KqipXNUdS7wpQzBHSe180lBGO60SoK0yVo3CYJgb2MkobuWuBX6dhkYP5ORCLd55y+SaflMOV5fqAB53ux4w==
+  dependencies:
+    options ">=0.0.5"
+    ultron "1.0.x"
 
 wt@^1.2.0:
   version "1.2.0"
