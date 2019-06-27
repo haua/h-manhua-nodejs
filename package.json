@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "egg-bin dev",
+    "install": "yarn install --production",
     "start:prod": "egg-scripts start --title=egg-server-h-manhua-nodejs-9218 --env=prod --daemon",
     "restart:prod": "npm stop && npm run start:prod",
     "stop": "egg-scripts stop --title=egg-server-h-manhua-nodejs-9218",
