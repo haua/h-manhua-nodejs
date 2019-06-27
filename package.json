@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "egg-bin dev",
-    "start:prod": "egg-scripts start --daemon --title=egg-server-h-manhua-nodejs-9218 --env=prod",
+    "start:prod": "egg-scripts start --title=egg-server-h-manhua-nodejs-9218 --env=prod --daemon",
     "stop": "egg-scripts stop --title=egg-server-h-manhua-nodejs-9218",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
