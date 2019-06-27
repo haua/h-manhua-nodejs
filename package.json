@@ -1,0 +1,68 @@
+{
+  "name": "h-manhua-nodejs",
+  "version": "1.0.0",
+  "description": "haua的漫画app",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "scripts": {
+    "dev": "egg-bin dev",
+    "start": "egg-scripts start --daemon --title=egg-server-h-manhua-nodejs",
+    "stop": "egg-scripts stop --title=egg-server-h-manhua-nodejs",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "dependencies": {
+    "egg": "^2.15.1",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.1.0",
+    "moment": "^2.24.0",
+    "mysql2": "^1.6.5",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "mocha": "^6.1.4",
+    "standard": "^12.0.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "haua",
+  "license": "MIT",
+  "standard": {
+    "rules": {
+      "no-callback-literal": 0,
+      "no-return-await": 0
+    },
+    "globals": [
+      "describe",
+      "before",
+      "it",
+      "beforeEach",
+      "after"
+    ],
+    "plugins": [
+      "html"
+    ]
+  }
+}
