@@ -12,10 +12,10 @@ module.exports = {
     package: 'egg-redis'
   },
 
-  alinode: {
-    enable: true,
-    package: 'egg-alinode'
-  }
+  // alinode: {
+  //   enable: true,
+  //   package: 'egg-alinode'
+  // }
 
   // had enabled by egg
   // static: {
