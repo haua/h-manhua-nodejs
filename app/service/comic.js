@@ -29,6 +29,8 @@ module.exports = class extends Service {
     // const list = await this.packAuthors(rows)
 
     return [200, 'ok', {
+      page,
+      pageSize,
       total: count,
       list: rows
     }]
