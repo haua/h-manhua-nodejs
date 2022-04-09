@@ -26,7 +26,7 @@
     "egg-redis": "^2.4.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^5.1.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mysql2": "^1.6.5",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.7"
